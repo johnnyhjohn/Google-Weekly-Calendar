@@ -39,7 +39,7 @@ Date.prototype.getWeek = function() {
 };
 
 
-var CalendarFiner = CalendarFiner || {};
+var Calendar = Calendar || {};
 
 var dayNames 		 = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado'];
 var finalMes 	 	 = ['31','28','31','30','31','30','31','31','30','31','30','31'];
@@ -49,7 +49,7 @@ var anosBissextos 	 = ['2016','2020','2024','2028','2032'];
 
 finalMes = (anosBissextos.contains("" + (new Date()).getFullYear())) ? finalMesBissexto : finalMes;
 
-CalendarFiner = function(API, key, ID) {
+Calendar = function(API, key, ID) {
 
 	var _ = this;
 
